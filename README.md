@@ -27,7 +27,9 @@ Les sessions sont un mécanisme permettant de conserver des informations entre l
 🚀 Utilisation
 Ouvrez le fichier `index.php` dans votre navigateur.
 Suivez les instructions à l'écran pour expérimenter avec la création, la lecture et la suppression de sessions.
+
 💡 Exemples de Code
+
 🔑 Démarrer une Session
 Voici un exemple simple de démarrage d'une session et de stockage d'une valeur :
 
