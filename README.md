@@ -7,6 +7,7 @@ Ce projet est dédié à mon Réapprentissage de la gestion des sessions dans de
 -   [Introduction]
 -   [Installation]
 -   [Utilisation]
+-   [Utilisation]
 -   [Exemples de Code]
 -   [Références]
 
@@ -34,8 +35,6 @@ Les sessions sont un mécanisme permettant de conserver des informations entre l
 Démarrer une Session
 Voici un exemple simple de démarrage d'une session et de stockage d'une valeur :
 
-Copier
-
 <?php
 session_start(); // Démarrer la session
 $_SESSION["utilisateur"] = "Jean"; // Stocker une valeur dans la session
@@ -43,8 +42,6 @@ $_SESSION["utilisateur"] = "Jean"; // Stocker une valeur dans la session
 
 Lecture d'une Session
 Pour lire une valeur de session, utilisez le code suivant :
-
-Copier
 
 <?php
 session_start(); // Démarrer la session
@@ -58,8 +55,6 @@ if(isset($_SESSION["utilisateur"])) {
 Suppression d'une Session
 Pour supprimer une valeur de session :
 
-Copier
-
 <?php
 session_start(); // Démarrer la session
 unset($_SESSION["utilisateur"]); // Supprimer la valeur de la session
@@ -67,8 +62,6 @@ unset($_SESSION["utilisateur"]); // Supprimer la valeur de la session
 
 Détruire une Session
 Pour détruire complètement une session :
-
-Copier
 
 <?php
 session_start(); // Démarrer la session
