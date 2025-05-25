@@ -1,7 +1,7 @@
 📖 README - Réapprentissage des Sessions PHP Procédural
 
 
-📌 Description du Projet
+📌Description du Projet
 Ce projet est une application simple de démonstration pour réapprendre la gestion des sessions en PHP procédural. Il comprend:
 
 Un système de connexion/déconnexion
@@ -10,16 +10,26 @@ Une gestion basique des sessions
 🛠 Structure des Fichiers
 
 📦 projet-sessions-php
-├── 📄 index.php         
+
+├── 📄 index.php   
+
         🔄 Point d'entrée redirigeant vers login
-├── 📄 header.php           
+        
+├── 📄 header.php    
+
         🏗 En-tête HTML commun
-├── 📄 login.php            
+        
+├── 📄 login.php     
+
         🔐 Page de connexion
-├── 📄 bienvenue.php       
+        
+├── 📄 bienvenue.php    
+
         🎉 Page de bienvenue après connexion
+        
 ├── 📂 controllers
 │   └── 📄 login.func.php   
+
         ⚙️ Logique de gestion de session
 
 🔐 Fonctionnalités
@@ -41,28 +51,39 @@ Server Icon Configuration requise
 PHP 7.4+
 Serveur web (Apache, Nginx)
 
-Copier
-git clone [URL_DU_PROJET]
-cd projet-sessions-php
+        git clone https://github.com/Denismaka/session-avec-php.git
+
+        cd projet-sessions-php
 
 Placez les fichiers dans le dossier de votre serveur web
 Accédez à index.php via votre navigateur
 
 📚 Concepts Appris
 PHP Iconsession_start() - Initialisation des sessions
+
 Variable Icon$_SESSION - Stockage des données de session
+
 Security IconProtection des pages avec vérification de session
 
 
 🔄 Workflow Typique
-Utilisateur accède à index.php
-Redirection vers login.php
-Après authentification réussie:
-Création de session
-Redirection vers bienvenue.php
-Option de déconnexion disponible:
-Destruction de session
+
+        Utilisateur accède à index.php
+
+        Redirection vers login.php
+
+        Après authentification réussie:
+
+        Création de session
+
+        Redirection vers bienvenue.php
+
+        Option de déconnexion disponible:
+        
+        Destruction de session
+
 Retour à la page de login
 
 🛡 Sécurité (À Améliorer)
+
 ⚠️ Ce projet est une démonstration pédagogique.
