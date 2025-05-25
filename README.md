@@ -10,12 +10,17 @@ Une gestion basique des sessions
 🛠 Structure des Fichiers
 
 📦 projet-sessions-php
-├── 📄 index.php            🔄 Point d'entrée redirigeant vers login
-├── 📄 header.php           🏗 En-tête HTML commun
-├── 📄 login.php            🔐 Page de connexion
-├── 📄 bienvenue.php        🎉 Page de bienvenue après connexion
+├── 📄 index.php         
+        🔄 Point d'entrée redirigeant vers login
+├── 📄 header.php           
+        🏗 En-tête HTML commun
+├── 📄 login.php            
+        🔐 Page de connexion
+├── 📄 bienvenue.php       
+        🎉 Page de bienvenue après connexion
 ├── 📂 controllers
-│   └── 📄 login.func.php   ⚙️ Logique de gestion de session
+│   └── 📄 login.func.php   
+        ⚙️ Logique de gestion de session
 
 🔐 Fonctionnalités
 
@@ -48,7 +53,7 @@ PHP Iconsession_start() - Initialisation des sessions
 Variable Icon$_SESSION - Stockage des données de session
 Security IconProtection des pages avec vérification de session
 
-Redirect Iconheader("Location: ...") - Redirections HTTP
+
 🔄 Workflow Typique
 Utilisateur accède à index.php
 Redirection vers login.php
