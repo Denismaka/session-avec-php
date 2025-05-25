@@ -8,7 +8,7 @@
     <title>Réapprentissage de la session avec php proceduraral</title>
 </head>
 
-<body class="bg-dark">
+<body>
 
 </body>
 
