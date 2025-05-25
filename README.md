@@ -1,80 +1,63 @@
-# 🗂️ Apprentissage de la Mise en Place de Sessions en PHP
+📖 README - Réapprentissage des Sessions PHP Procédural
 
-Ce projet est dédié à mon apprentissage de la gestion des sessions dans des applications web en utilisant PHP de manière procédurale.
 
-## 📚 Table des Matières
+📌 Description du Projet
+Ce projet est une application simple de démonstration pour réapprendre la gestion des sessions en PHP procédural. Il comprend:
 
--   [Introduction](#introduction)
--   [Installation](#installation)
--   [Utilisation](#utilisation)
--   [Exemples de Code](#exemples-de-code)
--   [Références](#références)
+Un système de connexion/déconnexion
+Une page de bienvenue personnalisée
+Une gestion basique des sessions
+🛠 Structure des Fichiers
 
-## 📝 Introduction
+📦 projet-sessions-php
+├── 📄 index.php            🔄 Point d'entrée redirigeant vers login
+├── 📄 header.php           🏗 En-tête HTML commun
+├── 📄 login.php            🔐 Page de connexion
+├── 📄 bienvenue.php        🎉 Page de bienvenue après connexion
+├── 📂 controllers
+│   └── 📄 login.func.php   ⚙️ Logique de gestion de session
 
-Les sessions sont un mécanisme permettant de conserver des informations entre les requêtes d'un utilisateur sur un site web. Contrairement aux cookies, qui sont stockés sur le navigateur, les données de session sont stockées côté serveur. Ce projet a pour but de m'aider à comprendre comment créer, lire et supprimer des sessions en PHP.
+🔐 Fonctionnalités
 
-## 💻 Installation
+Utilisateur test: Denis-Maka / Mot de passe: denismakamotdepasse
 
-1. Clonez le dépôt :
-    ```bash
-    git clone https://github.com/votre-utilisateur/votre-repo.git
-    ```
-2. Accédez au répertoire du projet :
-   cd votre-repo
-3. Assurez-vous d'avoir un serveur web avec PHP installé (comme XAMPP, WAMP ou laragon).
 
-🚀 Utilisation
-Ouvrez le fichier `index.php` dans votre navigateur.
-Suivez les instructions à l'écran pour expérimenter avec la création, la lecture et la suppression de sessions.
+Création de session à la connexion
+Destruction de session à la déconnexion
+Protection des pages privées
 
-💡 Exemples de Code
+Design avec Tailwind CSS
+Animations simples
+Messages d'erreur contextuels
 
-🔑 Démarrer une Session
-Voici un exemple simple de démarrage d'une session et de stockage d'une valeur :
+🚀 Installation
+Server Icon Configuration requise
 
-<?php
-session_start(); // Démarrer la session
-$_SESSION["utilisateur"] = "Jean"; // Stocker une valeur dans la session
-?>
+PHP 7.4+
+Serveur web (Apache, Nginx)
 
-📖 Lecture d'une Session
-Pour lire une valeur de session, utilisez le code suivant :
+Copier
+git clone [URL_DU_PROJET]
+cd projet-sessions-php
 
-<?php
-session_start(); // Démarrer la session
-if(isset($_SESSION["utilisateur"])) {
-    echo "Utilisateur : " . $_SESSION["utilisateur"];
-} else {
-    echo "Aucun utilisateur connecté.";
-}
-?>
+Placez les fichiers dans le dossier de votre serveur web
+Accédez à index.php via votre navigateur
 
-❌ Suppression d'une Session
-Pour supprimer une valeur de session :
+📚 Concepts Appris
+PHP Iconsession_start() - Initialisation des sessions
+Variable Icon$_SESSION - Stockage des données de session
+Security IconProtection des pages avec vérification de session
 
-<?php
-session_start(); // Démarrer la session
-unset($_SESSION["utilisateur"]); // Supprimer la valeur de la session
-?>
+Redirect Iconheader("Location: ...") - Redirections HTTP
+🔄 Workflow Typique
+Utilisateur accède à index.php
+Redirection vers login.php
+Après authentification réussie:
+Création de session
+Redirection vers bienvenue.php
+Option de déconnexion disponible:
+Destruction de session
+Retour à la page de login
 
-🗑️ Détruire une Session
-Pour détruire complètement une session :
-
-<?php
-session_start(); // Démarrer la session
-session_destroy(); // Détruire la session
-?>
-
-📖 Références
-Documentation PHP sur les sessions
-
-## Contact
-
-Pour toute question ou collaboration, n'hésitez pas à me contacter :
-
-Email : makadenis370@gmail.com
-Téléphone : +243818252385, +243997435030.
-Réseaux sociaux : Suivez-moi sur https://twitter.com/MakaDenis3, https://www.linkedin.com/in/Denismaka, https://github.com/Denismaka, https://www.facebook.com/Denismaka
-
-Ce projet est un excellent moyen pour moi d'apprendre et de pratiquer la gestion des cookies en PHP !.
+🛡 Sécurité (À Améliorer)
+⚠️ Ce projet est une démonstration pédagogique.
