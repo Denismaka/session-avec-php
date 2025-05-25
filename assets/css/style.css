@@ -16,17 +16,15 @@
 /* ############## */
 /* Login */
 /* ############## */
-#login .login-form {
-    margin-top: 100px;
-    animation: fadeIn 1s;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s;
 }
